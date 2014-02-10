@@ -1,10 +1,10 @@
 file_generator <- function (index){
 	if(index %in% 1:9){
-		paste("linha_det.php_0",index,".html", sep = "")
+		paste("linha_det.php_00",index,".html", sep = "")
 	}else if(index %in% 10:99){
-		paste("linha_det.php_00",index,".html", sep = "")
+		paste("linha_det.php_0",index,".html", sep = "")
 	}else{
-		paste("linha_det.php_00",index,".html", sep = "")
+		paste("linha_det.php_",index,".html", sep = "")
 	}
 }
 

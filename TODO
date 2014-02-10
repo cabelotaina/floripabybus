@@ -3,6 +3,19 @@
 * gerar projeto em Rails e ver como seria um sistema de buscas;
 * Inserir dados em um banco via seeds - rails;
 	http://xyzpub.com/en/ruby-on-rails/3.2/seed_rb.html
+	podemos gerar um arquivo seed por meio do R e depois rodar no rails.
 * Ver uma forma de obter legenda com horario que fique bacana;
+	Uma forma pode ser  com o seguinte xpath - "//table[6]/tr/td" **
 * Comprimir mais o algoritimo, ele pode ser apenas um;
+
+
+** Para testar ele:
+
+> xpathSApply(htmlParse("linha_det.php_005.html" , encoding = "UTF8" ),"//table[6]/tr/td")
+
+# Para fazer para os 6 horarios:
+
+> horarios.A = scrap_list("//table[6]/tr/td")
+
+Em seguida devemos retirar as tags e deixar apenas um horario como 10:22 ou 12:23M;
 
