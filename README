@@ -1,0 +1,47 @@
+Pegar onibus em floripa é dificil. Se o sistema online ao menos fosse bom...
+Sendo assim resolvi me dedicar a aprender algo de R e de raspagem de site por meio da biblioteca XML 
+e da biblioteca XPath.
+
+Atualmente tenho quase todas as informações. Falta apenas uma, os dados de legenda, por exemplo quando um onibus é meia viagem, ou vai recolher, se ele possui assento para cadeirante, ou cego com cão guia e por ai vai.
+
+Para ver o material usando o R:
+
+Instale o R na sua maquina "debian-like" ou outras e em seguida instale a biblioteca XML:
+ps.: você pode encontrar o R nós repositórios do CRAN, assim como infos para outras distros.
+
+# em algum sh faça
+
+sudo apt-get install r-base # instale o R
+
+# rode o R na pasta horarios, ali esta o workspace
+
+install.packages("XML") # instale a libXML
+library(XML) #carregue a libXML
+
+# Agora carregue os dois algoritimos de raspagem dos arquivos
+
+source("scrap_bus_fields.R")
+source("scrap_bus_list.R")
+
+# os dois algoritimos recebem um xpath, o primeiro retorna uma lista com informação de um onibus em cada linha, o segundo retorna uma lista de listas com cada lista representando por exemplo horarios.
+
+Com as linhas abaixo consigo obter a maior parte das informações do onibus menos, horario itinerario e referencias:
+
+> linhas = scrap_fields("//td[2]/h1/text()")
+> tarifa_cartao = scrap_fields("//div[4]/table[1]/tr[2]/td[2]/text()")
+> tarifa_dinheiro = scrap_fields("//tr[2]/td[4]/text()")
+> tempo_medio_ida = scrap_fields("//tr[3]/td[2]/text()")
+> tempo_medio_volta = scrap_fields("//tr[3]/td[4]/text()")
+> extensao_ida = scrap_fields("//tr[4]/td[2]/text()")
+> extensao_volta = scrap_fields("//tr[4]/td[4]/text()")
+> notas_da_linha = scrap_fields("//tr[5]/td[2]/text()")
+
+Essas consigo por meio do outro algoritimo que tem uma diferreça minima:
+
+> dia_da_semana.A = scrap_fields("//table[3]/tr[1]/td[1]/h1/text()")
+> horarios.A = scrap_list("//table[4]/tr[*]/td[*]/p/text()")
+
+Isso é feito ate a letra F (6 horarios - mais ou menos - seg-sex, sab, dom) 
+Para tal basta fazer 6 iterações com um incremento de table[n+2]
+
+
