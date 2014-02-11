@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @busline.number %>
+</p>
+
+<p>
+  <strong>Line:</strong>
+  <%= @busline.line %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @busline.company %>
+</p>
+
+<p>
+  <strong>Card price:</strong>
+  <%= @busline.card_price %>
+</p>
+
+<p>
+  <strong>Money price:</strong>
+  <%= @busline.money_price %>
+</p>
+
+<p>
+  <strong>Time to go:</strong>
+  <%= @busline.time_to_go %>
+</p>
+
+<p>
+  <strong>Time to back:</strong>
+  <%= @busline.time_to_back %>
+</p>
+
+<p>
+  <strong>Busdayofweek:</strong>
+  <%= @busline.busdayofweek %>
+</p>
+
+<%= link_to 'Edit', edit_busline_path(@busline) %> |
+<%= link_to 'Back', buslines_path %>

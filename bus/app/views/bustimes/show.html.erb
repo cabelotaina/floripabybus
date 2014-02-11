@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @bustime.time %>
+</p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @bustime.label %>
+</p>
+
+<%= link_to 'Edit', edit_bustime_path(@bustime) %> |
+<%= link_to 'Back', bustimes_path %>

@@ -7,7 +7,7 @@
 * Ver uma forma de obter legenda com horario que fique bacana;
 	Uma forma pode ser  com o seguinte xpath - "//table[6]/tr/td" **
 * Comprimir mais o algoritimo, ele pode ser apenas um;
-
+* Ver a posibilidade de cruzar os dados com as empresas de transporte
 
 ** Para testar ele:
 

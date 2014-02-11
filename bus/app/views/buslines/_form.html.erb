@@ -1,0 +1,49 @@
+<%= form_for(@busline) do |f| %>
+  <% if @busline.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@busline.errors.count, "error") %> prohibited this busline from being saved:</h2>
+
+      <ul>
+      <% @busline.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :line %><br>
+    <%= f.text_field :line %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :card_price %><br>
+    <%= f.text_field :card_price %>
+  </div>
+  <div class="field">
+    <%= f.label :money_price %><br>
+    <%= f.text_field :money_price %>
+  </div>
+  <div class="field">
+    <%= f.label :time_to_go %><br>
+    <%= f.time_select :time_to_go %>
+  </div>
+  <div class="field">
+    <%= f.label :time_to_back %><br>
+    <%= f.time_select :time_to_back %>
+  </div>
+  <div class="field">
+    <%= f.label :busdayofweek_id %><br>
+    <%= f.text_field :busdayofweek_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
