@@ -1,7 +1,7 @@
 class BusdayofweeksController < ApplicationController
   before_action :set_busdayofweek, only: [:show, :edit, :update, :destroy]
-  belongs_to :busline
-  has_many :bustimes
+  #belongs_to :busline
+  #has_many :bustimes
 
   # GET /busdayofweeks
   # GET /busdayofweeks.json
