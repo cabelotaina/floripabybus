@@ -44,4 +44,21 @@ horarios.A = scrap_list("//table[4]/tr[*]/td[*]/p/text()")
 Isso é feito ate a letra F (6 horarios - mais ou menos - seg-sex, sab, dom) 
 Para tal basta fazer 6 iterações com um incremento de table[n+2]
 
+#########################################################################################
+For install new gems:
+
+* bundle install --path vendor/bundle
+
+List of commands to generate new models:
+
+* rails g model place name:string
+* install gem acts_as_list
+* rails g migration AddPositionToPlace position:integer
+* rails g model reference
+* rails g model route
+* set up the 3 new models accordly of page https://github.com/swanandp/acts_as_list
+
+See help for gem acts_as_list 
+
+* https://github.com/swanandp/acts_as_list/blob/master/lib/acts_as_list/active_record/acts/list.rb
 

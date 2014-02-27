@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140220021302) do
+ActiveRecord::Schema.define(version: 20140227005051) do
 
   create_table "busdayofweeks", force: true do |t|
     t.string   "day"
@@ -40,6 +40,23 @@ ActiveRecord::Schema.define(version: 20140220021302) do
     t.time     "time"
     t.string   "label"
     t.integer  "busdayofweek_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "places", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "position"
+  end
+
+  create_table "references", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "routes", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
