@@ -46,9 +46,10 @@ ActiveRecord::Schema.define(version: 20140227005051) do
 
   create_table "places", force: true do |t|
     t.string   "name"
+    t.integer  "reference_id"
+    t.integer  "route_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "position"
   end
 
   create_table "references", force: true do |t|
