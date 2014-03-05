@@ -11,35 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140227005051) do
+ActiveRecord::Schema.define(version: 20140305014104) do
 
-  create_table "busdayofweeks", force: true do |t|
+  create_table "dayofweeks", force: true do |t|
     t.string   "day"
+    t.string   "origin"
+    t.string   "destiny"
     t.string   "direction"
-    t.integer  "busline_id"
+    t.integer  "line_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "buslines", force: true do |t|
+  create_table "hours", force: true do |t|
+    t.time     "time"
+    t.integer  "dayofweek_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "lines", force: true do |t|
     t.string   "number"
-    t.string   "line"
+    t.string   "name"
     t.string   "company"
     t.decimal  "card_price"
     t.decimal  "money_price"
     t.time     "time_to_go"
     t.time     "time_to_back"
-    t.integer  "busdayofweek_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "buslines", ["busdayofweek_id"], name: "index_buslines_on_busdayofweek_id"
-
-  create_table "bustimes", force: true do |t|
-    t.time     "time"
-    t.string   "label"
-    t.integer  "busdayofweek_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -50,14 +48,17 @@ ActiveRecord::Schema.define(version: 20140227005051) do
     t.integer  "route_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "references", force: true do |t|
+    t.integer  "line_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "routes", force: true do |t|
+    t.integer  "line_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
