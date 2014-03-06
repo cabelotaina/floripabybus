@@ -47,6 +47,7 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'iconv'
 gem 'hpricot'
+gem 'htmlentities'
 
 # gem Brazilian Rails
 gem 'brazilian-rails'

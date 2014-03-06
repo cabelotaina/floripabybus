@@ -36,12 +36,12 @@ files.each do |file|
   end
    time_back = Time.new(2000, 1, 1, 0,0 , 0,"+00:00").change( hour: time_back[0].to_i, min: time_back[1].to_i)
    p time_back
-  @bus = Busline.new(:number => info[0].to_s, :line => info[1].to_s,:company => info[2].to_s, :card_price => card_price , :money_price => money_price, :time_to_go => trip_time, :time_to_back => time_back).save
+  @bus = Line.new(:number => info[0].to_s, :line => info[1].to_s,:company => info[2].to_s, :card_price => card_price , :money_price => money_price, :time_to_go => trip_time, :time_to_back => time_back).save
  for i in 3..13
    nomes = html.search("//table[#{i}]/tr[1]/td[1]/h1/text()").inner_text
    if (!nomes.empty? and !(nomes.include? "Legenda"))
 	   nomes = nomes.split(" - ")
-    Busdayofweek.new(:day => nomes[0], :direction => nomes[1], :busline_id =>@bus).save
+    @bus.dayofweeks.new(:day => nomes[0], :direction => nomes[1]).save
    end
    i+=2
  end   
@@ -49,14 +49,21 @@ end
 
 require 'iconv'
 require 'hpricot'
-ic = Iconv.new("UTF-8//IGNORE", "UTF-8")
-files = Dir["/home/maurilio/code/onibus_floripa/bus/horarios/linhas/*"]
+ic = Iconv.new("UTF-8", "ISO-8859-1")
+files = Dir["/home/maurilio/code/floripabybus/bus/horarios/linhas/*"]
 files.each do |file|
 	  html = open(file) { |f| Hpricot(ic.iconv(f.read)) }
  for i in 3..13
 	    nomes = html.search("//table[#{i}]/tr[1]/td[1]/h1/text()").inner_text
 	       if (!nomes.empty? and !(nomes.include? "Legenda"))
-		       p nomes
+                       nomes = nomes.gsub("->","=>")
+                       nomes = nomes.gsub("-","#")
+                       nomes = nomes.split(/#/)
+              	       p nomes[0].squish
+                       p nomes[1].squish
+                       if !(nomes[2] == nil)
+                        p nomes[2].squish
+                       end
 	       end
  i+=2
  end
@@ -64,9 +71,16 @@ end
 
 
 # comand for generate scaffold
-rails g scaffold busline number:string line:string company:string card_price:decimal money_price:decimal time_to_go:time time_to_back:time busdayofweek:references
-rails generate scaffold busdayofweek day:string direction:string bustime:references
-rails generate scaffold bustime time:time label:string
+rails g model line number:string name:string company:string card_price:decimal money_price:decimal time_to_go:time time_to_back:time 
+rails generate model dayofweek day:string direction:string bustime:references
+rails generate model hour value:time 
+rails generate model label value:string
+
+rails g model reference
+rails g model route 
+rails g model place name:string
+
+
 # remove the first character:
 # t.slice!(0)
 # Resolver problema com time que aumenta em 2 horas apos inserir tempo de ida e tempo de volta
