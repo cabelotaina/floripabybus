@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day: MyString
+  origin: MyString
+  destiny: MyString
+  direction: MyString
+
+two:
+  day: MyString
+  origin: MyString
+  destiny: MyString
+  direction: MyString

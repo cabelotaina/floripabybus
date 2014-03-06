@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  name: MyString
+  company: MyString
+  card_price: 9.99
+  money_price: 9.99
+  time_to_go: 2014-03-04 22:35:49
+  time_to_back: 2014-03-04 22:35:49
+
+two:
+  number: MyString
+  name: MyString
+  company: MyString
+  card_price: 9.99
+  money_price: 9.99
+  time_to_go: 2014-03-04 22:35:49
+  time_to_back: 2014-03-04 22:35:49
