@@ -15,8 +15,7 @@ ActiveRecord::Schema.define(version: 20140305014104) do
 
   create_table "dayofweeks", force: true do |t|
     t.string   "day"
-    t.string   "origin"
-    t.string   "destiny"
+    t.string   "path"
     t.string   "direction"
     t.integer  "line_id"
     t.datetime "created_at"
