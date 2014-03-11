@@ -51,3 +51,6 @@ gem 'htmlentities'
 
 # gem Brazilian Rails
 gem 'brazilian-rails'
+
+gem "active_model_serializers"
+
