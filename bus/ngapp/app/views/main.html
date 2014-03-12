@@ -1,0 +1,67 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Bus</a></li>
+    <li><a ng-href="#">Sobre</a></li>
+    <li><a ng-href="#">Contato</a></li>
+  </ul>
+  <h3 class="text-muted">Latão</h3>
+</div>
+
+<div class="jumbotron">
+  <h1>Horarios Onibus - Florianopólis</h1>
+  <p class="lead">
+    <!--img src="images/yeoman.png" alt="I'm Yeoman"--><br>
+   Veja os horarios do onibus com maior agilidade :)
+  </p>
+
+<!--
+    <div ng-init="friends = [{name:'John', phone:'555-1276'},
+    {name:'Mary', phone:'800-BIG-MARY'},
+    {name:'Mike', phone:'555-4321'},
+    {name:'Adam', phone:'555-5678'},
+    {name:'Julie', phone:'555-8765'},
+    {name:'Juliette', phone:'555-5678'}]"></div>
+     
+    Search: <input ng-model="searchText">
+    <table id="searchTextResults">
+    <tr><th>Name</th><th>Phone</th></tr>
+    <tr ng-repeat="friend in friends | filter:searchText">
+    <td>{{friend.name}}</td>
+    <td>{{friend.phone}}</td>
+    </tr>
+    </table>
+    <hr>
+    Any: <input ng-model="search.$"> <br>
+    Name only <input ng-model="search.name"><br>
+    Phone only <input ng-model="search.phone"><br>
+    Equality <input type="checkbox" ng-model="strict"><br>
+    <table id="searchObjResults">
+    <tr><th>Name</th><th>Phone</th></tr>
+    <tr ng-repeat="friendObj in friends | filter:search:strict">
+    <td>{{friendObj.name}}</td>
+    <td>{{friendObj.phone}}</td>
+    </tr>
+    </table>
+-->
+
+ Search: <input ng-model="searchText">
+    <table id="searchTextResults">
+    <tr><th>Numero</th><th>Linha</th></tr>
+    <tr ng-repeat="line in lines | filter:searchText">
+    <td>{{line.number}}</td>
+    <td>{{line.name}}</td>
+    </tr>
+    </table>
+
+<p>{{mensagem}}
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+</div>
+
+<div class="row marketing">
+<h4>Como contribuir?</h4>
+<p>Quer ajudar dar uma força ao nosso projeto, entre em contato com a gente :)</p>
+</div>
+
+<div class="footer">
+  <p>♥ from the Her-Manos team</p>
+</div>

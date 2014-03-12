@@ -4,7 +4,7 @@ Bus::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-   root 'line#index'
+   get 'lines' => 'line#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
