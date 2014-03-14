@@ -2,13 +2,11 @@
 
 angular.module('ngappApp')
   .controller('MainCtrl', function($scope, Restangular) {
-    $scope.mensagem = "Vamo que vamo!"
-    Restangular.setBaseUrl("http://127.0.0.1:3000") 
-    //Restangular.setDefaultRequestParams('jsonp', {callback: 'JSON_CALLBACK'});
-    Restangular.all("lines").getList().then(function() {
-     $scope.lines = response;
-     console.log("All ok");
-     }, function(response) {
-     console.log("Error with status code", response.status);
-    });
+    Restangular.setBaseUrl('http://localhost:3000');
+    var baseAccounts = Restangular.all('lines');
+
+    // This will query /accounts and return a promise.
+    baseAccounts.getList().then(function(accounts) {
+       $scope.lines = accounts;
+       });
   });

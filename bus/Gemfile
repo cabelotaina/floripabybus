@@ -54,3 +54,5 @@ gem 'brazilian-rails'
 
 gem "active_model_serializers"
 
+gem 'sass'
+gem 'compass'

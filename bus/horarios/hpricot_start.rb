@@ -1,7 +1,7 @@
 require 'iconv'
 require 'hpricot'
 ic = Iconv.new("UTF-8", "ISO-8859-1")
-files = Dir["/home/maurilio/code/floripabybus/bus/horarios/linhas/*"]
+files = Dir["/home/maurilio/code/onibus_floripa/bus/horarios/linhas/*"]
 files.each do |file|
   html = open(file) { |f| Hpricot(ic.iconv(f.read)) }
   t = html.search("//td[2]/h1/text()").inner_text.squish.split(/\-([^-]*)$/)

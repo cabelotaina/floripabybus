@@ -46,14 +46,14 @@
 
  Search: <input ng-model="searchText">
     <table id="searchTextResults">
-    <tr><th>Numero</th><th>Linha</th></tr>
+	    <tr><th>Numero</th><th>Linha</th><th>Dia<th></tr>
     <tr ng-repeat="line in lines | filter:searchText">
     <td>{{line.number}}</td>
     <td>{{line.name}}</td>
+    <!--td>{{line.dayofweeks[0]}}</td-->
     </tr>
     </table>
 
-<p>{{mensagem}}
   <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
 </div>
 

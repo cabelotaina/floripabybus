@@ -16,4 +16,5 @@ angular.module('ngappApp', [
       .otherwise({
         redirectTo: '/'
       });
+
   });
