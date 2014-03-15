@@ -1,0 +1,10 @@
+<h1>{{bus.number}} - {{bus.name}}</h1>
+<div class="day" ng-repeat="block in bus.dayofweeks">
+Dia: {{block.day}}
+Caminho: {{block.path}}
+
+Horario:
+ <li ng-repeat="hour in block.hours">
+   {{hour.time}}  
+ </li>
+</div>

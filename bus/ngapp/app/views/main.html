@@ -10,47 +10,16 @@
 <div class="jumbotron">
   <h1>Horarios Onibus - Florianopólis</h1>
   <p class="lead">
-    <!--img src="images/yeoman.png" alt="I'm Yeoman"--><br>
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
    Veja os horarios do onibus com maior agilidade :)
   </p>
 
-<!--
-    <div ng-init="friends = [{name:'John', phone:'555-1276'},
-    {name:'Mary', phone:'800-BIG-MARY'},
-    {name:'Mike', phone:'555-4321'},
-    {name:'Adam', phone:'555-5678'},
-    {name:'Julie', phone:'555-8765'},
-    {name:'Juliette', phone:'555-5678'}]"></div>
-     
-    Search: <input ng-model="searchText">
-    <table id="searchTextResults">
-    <tr><th>Name</th><th>Phone</th></tr>
-    <tr ng-repeat="friend in friends | filter:searchText">
-    <td>{{friend.name}}</td>
-    <td>{{friend.phone}}</td>
-    </tr>
-    </table>
-    <hr>
-    Any: <input ng-model="search.$"> <br>
-    Name only <input ng-model="search.name"><br>
-    Phone only <input ng-model="search.phone"><br>
-    Equality <input type="checkbox" ng-model="strict"><br>
-    <table id="searchObjResults">
-    <tr><th>Name</th><th>Phone</th></tr>
-    <tr ng-repeat="friendObj in friends | filter:search:strict">
-    <td>{{friendObj.name}}</td>
-    <td>{{friendObj.phone}}</td>
-    </tr>
-    </table>
--->
-
  Search: <input ng-model="searchText">
     <table id="searchTextResults">
-	    <tr><th>Numero</th><th>Linha</th><th>Dia<th></tr>
+	    <tr><th>Numero</th><th>Linha</th>
     <tr ng-repeat="line in lines | filter:searchText">
     <td>{{line.number}}</td>
-    <td>{{line.name}}</td>
-    <!--td>{{line.dayofweeks[0]}}</td-->
+    <td><a ng-href="#/line/{{line.number}}">{{line.name}}</a></td>
     </tr>
     </table>
 

@@ -13,6 +13,10 @@ angular.module('ngappApp', [
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/line/:number', {
+        templateUrl: 'views/line.html',
+        controller: 'LineCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
