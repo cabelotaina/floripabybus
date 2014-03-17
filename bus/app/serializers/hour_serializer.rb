@@ -1,7 +1,8 @@
 class HourSerializer < ActiveModel::Serializer
-  attributes :time
+  attributes :newtime
 
   def newtime
-   "#{:time.strftime("%H:%M")}"
+   object.time = object.time-3.hours
+   "#{object.time.strftime("%H:%M")}"
   end
 end

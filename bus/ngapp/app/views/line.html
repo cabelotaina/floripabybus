@@ -1,10 +1,11 @@
 <h1>{{bus.number}} - {{bus.name}}</h1>
 <div class="day" ng-repeat="block in bus.dayofweeks">
-Dia: {{block.day}}
-Caminho: {{block.path}}
+	<h3>{{block.day}}<br>
+		Direção: {{block.path}}</h3>
 
-Horario:
- <li ng-repeat="hour in block.hours">
-   {{hour.time}}  
- </li>
+	<h3>Horarios:</h3>
+	 Filtrar Horarios: <input ng-model="searchText">
+ <h1 ng-repeat="hour in block.hours | filter:searchText">
+   {{hour.newtime}}  
+ </h1>
 </div>
