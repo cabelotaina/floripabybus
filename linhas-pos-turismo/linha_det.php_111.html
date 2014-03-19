@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>MObfloripa</title>
+
+<META http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'/>
+<META name='title' content='MobFloripa'>
+<META name='url' content='www.mobfloripa.com.br'>
+<META name='description' content="O MobFloripa, ou Guia de Mobilidade de Florian&oacute;polis, oferece informa&ccedil;&otilde;es sobre os meios de transporte da Capital. Aqui voc&ecirc; encontra dados completos sobre o transporte coletivo, como hor&aacute;rios de linhas de &ocirc;nibus, tarifas e itiner&aacute;rios, transporte rodovi&aacute;rio, t&aacute;xis, avi&otilde;es, embarca&ccedil;&otilde;es, aluguel de diferentes ve&iacute;culos, caronas, op&ccedil;&otilde;es para portadores de necessidades especiais, novidades, links, downloads e muito mais.">
+<META name='keywords' content="&Ocirc;nibus, transportes, aluguel de ve&iacute;culos, intermunicipal, rodovi&aacute;rio, guia de mobilidade, bicicletas, hor&aacute;rios de onibus, florianopolis, floripa, necessidades especiais, caronas, embarca&ccedil;&otilde;es, t&aacute;xi, transporte escolar, a&eacute;reo, avi&atilde;o, itiner&aacute;rio, cart&atilde;o passe-r&aacute;pido">
+<META name='revisit-after' content='1'>
+<LINK href='mailto:faleconosco@mobfloripa.com.br' rev='made'>
+<LINK href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<SCRIPT type=text/javascript src="js/script.js"></SCRIPT>
+
+
+</HEAD>
+
+<body>
+<div id="header">
+	<div class="links">
+		<a href="onibus.php"><img src="images/header-links01.png" width="35" height="45" title="Transporte Municipal" /></a><a href="onibus_inter.php"><img src="images/header-links02.png" width="36" height="45" title="Transporte Intermunicipal" /></a><a href="onibus_rod.php"><img src="images/header-links03.png" width="39" height="45" title="Transporte Rodovi&aacute;rio" /></a><a href="aluguel.php?tipo=3"><img src="images/header-links04.png" width="37" height="45" title="T&aacute;xi" /></a><a href="aluguel.php?tipo=4"><img src="images/header-links05.png" width="39" height="45" title="Transporte Escolar" /></a><a href="aluguel.php?tipo=5"><img src="images/header-links06.png" width="43" height="45" title="Transporte A&eacute;reo" /></a><a href="aluguel.php?tipo=6"><img src="images/header-links07.png" width="37" height="45" title="Bicicletas" /></a><a href="aluguel.php?tipo=7"><img src="images/header-links08.png" width="38" height="45" title="Alugu&eacute;is de Carros" /></a><a href="aluguel.php?tipo=8"><img src="images/header-links09.png" width="41" height="45" title="Embarca&ccedil;&otilde;es" /></a><a href="aluguel.php?tipo=9"><img src="images/header-links10.png" width="38" height="45" title="Helic&oacute;pteros" /></a><a href="aluguel.php?tipo=10"><img src="images/header-links11.png" width="39" height="45" title="Micro-&ocirc;nibus e Vans" /></a><a href="aluguel.php?tipo=11"><img src="images/header-links12.png" width="36" height="45" title="Motos" /></a><a href="aluguel.php?tipo=12"><img src="images/header-links13.png" width="47" height="45" title="&Ocirc;nibus" /></a><a href="estacionamento.php"><img src="images/header-links14.png" width="38" height="45" title="Estacionamentos" /></a><a href="mobilidade.php?tipo=2"><img src="images/header-links15.png" width="24" height="45" title="Carona" /></a><a href="mobilidade.php?tipo=5"><img src="images/header-links16.png" width="26" height="45" title="Pedestre" /></a><a href="mobilidade.php?tipo=3"><img src="images/header-links17.png" width="33" height="45" title="Necessidades Especiais" /></a>
+	</div>
+  <div class="logado"><form id="form_login_bonus" name="form_login_bonus" action="bonus.php" method="post">  <div id="organiza">		<div id="titleTxtBonus">Bônus Fidelidade</div>  		<div id="organizaLogadoB">    		<a href="bonus.php">      		<img border="0" src="images/Help-icon.png" />    		</a>    	</div><!--fim do id organizaLogadoB-->    	<div id="controlaLogin">    		<div id="controlaNome">    			<input class="inputLogadoBonus" type="text" size="24px" onfocus="javascript:this.value='';" onblur="javascript:this.value = (this.value == '') ? 'Seu e-mail' : this.value;" value="Seu e-mail" name="email" id="email" />    		</div>    		<div id="controlaSenha">    			<input class="inputLogadoBonus" type="password" size="24px" onfocus="javascript:this.value='';" onblur="javascript:this.value = (this.value == '') ? 'Senha' : this.value;" value="Senha" name="senha" id="senha" />  			</div>  		</div><!-- fim do id controlaLogin-->  		<div id="seta">    		<input alt="logar" title="logar" type="image" width="19px" height="19px" src="images/icone-seta.png" />  		</div>  	<input type="hidden" value="1" name="bonificar" id="bonificar" />		<div id="btnCad"><a href="http://www.mobfloripa.com.br/bonus_cad.php"></a></div>		<div id="btnEsqueci"><a href="http://www.mobfloripa.com.br/bonus_reset.php"></a></div>  	<div class="clearboth"></div>  </div><!-- fim do id organiza--></form></div>
+  <div class="clearboth"></div>
+  <div class="mapa"><a href="mapasite.php"><img src="images/header-mapa.png" width="11" height="9" title="mapa do site" /></a></div>
+  <div class="logo"><a href="index.php"><img src="images/logo.png" width="149" height="55" title="home" /></a></div>
+  <div class="busca">
+		<form name="form_site" id="form_site" action="busca_site.php" method="post" class="form"><input name="todo" id="todo" type="text" class="inputBusca" value="Busca em todo portal" size="40px" onfocus="javascript:this.value='';" onblur="javascript:this.value = (this.value == '') ? 'Busca em todo portal' : this.value;"/></form>&nbsp;<a href="javascript:document.form_site.submit();"><img class="alinhamento-meio" src="images/icone-busca.png" width="16" height="16" border="0px"/></a> 
+	</div>
+  <div class="midias" style="padding-bottom: 5px;">
+  	<div class="social">
+			<!--<a href="http://www.youtube.com/mobfloripa" target="_blank"><img src="images/header-social06.png" width="27" height="22" alt="Youtube" /></a><a href="http://www.orkut.com.br/mobfloripa" target="_blank"><img src="images/header-social01.png" width="23" height="22" title="Orkut" /></a><a href="http://www.facebook.com/" target="_blank"><img src="images/header-social02.png" width="27" height="22" title="Facebook" /></a><a href="http://mobfloripa.blogspot.com" target="_blank"><img src="images/header-social03.png" width="26" height="22" title="Blog" /></a><a href="http://twitter.com/mobfloripa" target="_blank"><img src="images/header-social04.png" width="26" height="22" title="Twitter" /></a><a href="rss.php"><img src="images/header-social05.png" width="22" height="22" title="RSS" /></a>-->
+			<!--<a href="http://www.youtube.com" target="_blank"><img src="images/header-social06.png" width="27" height="22" alt="Youtube" /></a><a href="http://www.orkut.com.br/" target="_blank"><img src="images/header-social01.png" width="23" height="22" title="Orkut" /></a><a href="http://www.facebook.com/mobfloripa" target="_blank"><img src="images/header-social02.png" width="27" height="22" title="Facebook" /></a><a href="http://blogspot.com" target="_blank"><img src="images/header-social03.png" width="26" height="22" title="Blog" /></a><a href="http://twitter.com/mobfloripa" target="_blank"><img src="images/header-social04.png" width="26" height="22" title="Twitter" /></a><a href="rss.php"><img src="images/header-social05.png" width="22" height="22" title="RSS" /></a>-->
+			<a href="http://www.facebook.com/mobfloripa" target="_blank"><img src="images/header-social02.png" width="27" height="22" title="Facebook" /></a><a href="http://twitter.com/mobfloripa" target="_blank"><img src="images/header-social04.png" width="26" height="22" title="Twitter" /></a><a href="rss.php"><img src="images/header-social05.png" width="22" height="22" title="RSS" /></a>
+		</div>
+  	<div class="idiomas">
+			<p>Selecione um idioma:</p><br />
+			<a href="idioma.php?id=1"><img src="images/header-idiomas01.png" width="17" height="16" title="Português" /></a><a href="idioma.php?id=2"><img src="images/header-idiomas02.png" width="19" height="16" title="Espanhol" /></a><a href="idioma.php?id=3"><img src="images/header-idiomas03.png" width="19" height="16" title="Inglês" /></a><a href="idioma.php?id=4"><img src="images/header-idiomas06.png" width="17" height="16" title="Frances" /></a><a href="idioma.php?id=5"><img src="images/header-idiomas04.png" width="18" height="16" title="Alemão" /></a><a href="idioma.php?id=6"><img src="images/header-idiomas05.png" width="17" height="16" title="Holandês" /></a>
+		</div>
+  </div>
+</div>
+
+<div id="container">
+	<div id="content">
+		<div class="menu">
+			<a href="anuncie.php"><div class="menuLateral" id="menuLateralCadastre"><span class="notranslate">Cadastre seu Serviço</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="fale.php"><div class="menuLateral" id="menuLateralFale"><span class="notranslate">Fale Conosco</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="onibuscelular.php"><div class="menuLateral" id="menuLateralOnibus"><span class="notranslate">Ônibus no Celular</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="observatorio.php"><div class="menuLateral" id="menuLateralTransito"><span class="notranslate">Observatório de Trânsito</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="servicos.php"><div class="menuLateral" id="menuLateralMobFloripa"><span class="notranslate">Serviços MObfloripa</span></div></a>
+			
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<div class="menuLateral" id="menuLateralTopicosLista"><span class="notranslate">Sistemas de Buscas</span></div>
+			<ul>
+    		<li><a href="onibus.php"><span class="notranslate">Ônibus em Florianópolis</span></a></li>
+    		<li><a href="onibus_inter.php" ><span class="notranslate">Ônibus Intermunicipal</span></a></li>
+    		<li><a href="onibus_rod.php" ><span class="notranslate">Transporte Rodoviário</span></a></li>
+    		<li><a href="aluguel.php?tipo=3" ><span class="notranslate">Táxi</span></a></li>
+    		<li><a href="aluguel.php?tipo=4" ><span class="notranslate">Transporte Escolar</span></a></li>
+    		<li><a href="aluguel.php?tipo=5" ><span class="notranslate">Transporte Aéreo</span></a></li>
+    		<li><a href="estacionamento.php" ><span class="notranslate">Estacionamentos</span></a></li>
+			</ul><br />
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<div class="menuLateral" id="menuLateralTopicosLista"><span class="notranslate">Aluguéis e Passeios</span></div>
+			<ul>
+					<li><a href="aluguel.php?tipo=6" ><span class="notranslate">Bicicletas</span></a></li>
+					<li><a href="aluguel.php?tipo=7" ><span class="notranslate">Carros</span></a></li>
+					<li><a href="aluguel.php?tipo=8" ><span class="notranslate">Embarcações</span></a></li>
+					<li><a href="aluguel.php?tipo=9" ><span class="notranslate">Helicópteros e Aviões</span></a></li>
+					<li><a href="aluguel.php?tipo=10" ><span class="notranslate">Micro-Ônibus e Vans</span></a></li>
+					<li><a href="aluguel.php?tipo=11" ><span class="notranslate">Motos</span></a></li>
+					<li><a href="aluguel.php?tipo=12" ><span class="notranslate">Ônibus</span></a></li>
+			</ul><br />
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<div class="menuLateral" id="menuLateralTopicosLista"><span class="notranslate">Mobilidade Urbana</span></div>
+			<ul>
+					<li><a href="mobilidade.php?tipo=4" ><span class="notranslate">Transporte Municipal</span></a></li>
+					<li><a href="mapas.php" ><span class="notranslate">Mapas</span></a></li>
+					<li><a href="mobilidade.php?tipo=5" ><span class="notranslate">Pedestres</span></a></li>
+					<li><a href="mobilidade.php?tipo=1" ><span class="notranslate">Bicicleta</span></a></li>
+					<li><a href="mobilidade.php?tipo=2" ><span class="notranslate">Carona</span></a></li>
+					<li><a href="mobilidade.php?tipo=3" ><span class="notranslate">Necessidades Especiais</span></a></li>
+					<li><a href="novidades.php" ><span class="notranslate">Novidades</span></a></li>
+					<li><a href="downloads.php" ><span class="notranslate">Links e Downloads</span></a></li>
+			</ul><br />
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="quemsomos.php"><div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">Quem Somos?</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="duvidas.php"><div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">Dúvidas</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="enquetes.php"><div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">Enquetes</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="agenda.php"><div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">Agenda</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="bonus.php"><div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">Bônus Fidelidade</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="mobseusite.php"><div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">MObfloripa em seu site</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="mobpagina.php"><div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">MObfloripa página inicial</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<a href="apoio.php"><div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">Apoios e Parceiros</span></div></a>
+			<img src="images/marcador-pontilhado.png" width="200" height="9" alt="" /><br />
+			<div class="menuLateral" id="menuLateralTopicos"><span class="notranslate">Nuvem de Temas MObfloripa</span></div>
+			<div style="width:180px;height:auto;margin: 20px 0 0 5px;">  <div><a style="font-size: 7pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=necessidades especiais'">necessidades especiais</a>
+<a style="font-size: 6pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=copa 2014'">copa 2014</a>
+<a style="font-size: 10.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=fiscalização'">fiscalização</a>
+<a style="font-size: 9.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=combustível'">combustível</a>
+<a style="font-size: 1.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=ferrovia'">ferrovia</a>
+<a style="font-size: 7.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=artigo'">artigo</a>
+<a style="font-size: 6.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=transporte aéreo'">transporte aéreo</a>
+<a style="font-size: -1.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=BRT'">BRT</a>
+<a style="font-size: 0.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=transporte público'">transporte público</a>
+<a style="font-size: 11.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=brasil'">brasil</a>
+<a style="font-size: 3.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=protesto'">protesto</a>
+<a style="font-size: -1.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=turismo'">turismo</a>
+<a style="font-size: 0.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=táxi'">táxi</a>
+<a style="font-size: 13.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=trânsito'">trânsito</a>
+<a style="font-size: 8.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=evento'">evento</a>
+<a style="font-size: 5.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=rio de janeiro'">rio de janeiro</a>
+<a style="font-size: 10.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=governo federal'">governo federal</a>
+<a style="font-size: -2pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=PMF'">PMF</a>
+<a style="font-size: -0.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=aeroporto'">aeroporto</a>
+<a style="font-size: 2.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=BR-101'">BR-101</a>
+<a style="font-size: 6.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=ufsc'">ufsc</a>
+<a style="font-size: 8pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=santa catarina'">santa catarina</a>
+<a style="font-size: 1.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=transporte marítimo'">transporte marítimo</a>
+<a style="font-size: 12pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=tecnologia'">tecnologia</a>
+<a style="font-size: 10pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=acessibilidade'">acessibilidade</a>
+<a style="font-size: 11.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=prefeitura'">prefeitura</a>
+<a style="font-size: 12.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=ônibus'">ônibus</a>
+<a style="font-size: 7.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=são paulo'">são paulo</a>
+<a style="font-size: 11.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=políticas públicas'">políticas públicas</a>
+<a style="font-size: 2.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=plano diretor'">plano diretor</a>
+<a style="font-size: 4.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=lei seca'">lei seca</a>
+<a style="font-size: 9.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=infraestrutura'">infraestrutura</a>
+<a style="font-size: 12.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=obras'">obras</a>
+<a style="font-size: 8.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=Florianópolis'">Florianópolis</a>
+<a style="font-size: -0.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=pesquisa'">pesquisa</a>
+<a style="font-size: 13.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=florianópolis'">florianópolis</a>
+<a style="font-size: 2pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=ciclovia'">ciclovia</a>
+<a style="font-size: -1pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=São Paulo'">São Paulo</a>
+<a style="font-size: 14pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=mobilidade urbana'">mobilidade urbana</a>
+<a style="font-size: 5.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=Brasil'">Brasil</a>
+<a style="font-size: 0.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=greve'">greve</a>
+<a style="font-size: 12.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=sustentabilidade'">sustentabilidade</a>
+<a style="font-size: -2.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=eleições'">eleições</a>
+<a style="font-size: 4.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=internacional'">internacional</a>
+<a style="font-size: 3pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=mobilidade'">mobilidade</a>
+<a style="font-size: 9.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=ciclista'">ciclista</a>
+<a style="font-size: 9pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=pedestre'">pedestre</a>
+<a style="font-size: 7.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=ciclovias'">ciclovias</a>
+<a style="font-size: -2.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=pedágio'">pedágio</a>
+<a style="font-size: 1.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=opinião'">opinião</a>
+<a style="font-size: 13pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=transporte'">transporte</a>
+<a style="font-size: 4pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=transporte coletivo'">transporte coletivo</a>
+<a style="font-size: 4.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=montadora'">montadora</a>
+<a style="font-size: -0.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=Rio+20'">Rio+20</a>
+<a style="font-size: 6.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=eventos'">eventos</a>
+<a style="font-size: 1pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=gasolina'">gasolina</a>
+<a style="font-size: -2.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=PAC'">PAC</a>
+<a style="font-size: 3.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=desenvolvimento urbano'">desenvolvimento urbano</a>
+<a style="font-size: -1.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=dilma rousseff'">dilma rousseff</a>
+<a style="font-size: 0pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=política pública'">política pública</a>
+<a style="font-size: 13.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=bicicleta'">bicicleta</a>
+<a style="font-size: 5.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=acidente'">acidente</a>
+<a style="font-size: 5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=transportes'">transportes</a>
+<a style="font-size: 11pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=legislação'">legislação</a>
+<a style="font-size: 2.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=política'">política</a>
+<a style="font-size: 8.25pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=tarifa'">tarifa</a>
+<a style="font-size: 10.5pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=segurança'">segurança</a>
+<a style="font-size: 3.75pt;color:#595353; text-decoration:underline; margin: 0 2px 0 0;" href="javascript:window.top.location='busca_tags.php?q=bicicletas'">bicicletas</a>
+  </div></div>
+		</div>
+
+		<div class="busca-onibus">
+			<div class="busca-onibus-inputs">
+				<h1><span class="notranslate">Busca por Ônibus em Florianópolis</span></h1><br /><br />
+				<span class="notranslate"><form name="form_bnome" id="form_bnome" action="onibus.php" method="post" class="form"><input name="linha" id="linha" type="text" value="Número ou nome da linha" size="24px" class="inputBusca" onfocus="javascript:this.value='';" onblur="javascript:this.value = (this.value == '') ? 'Número ou nome da linha' : this.value;"/></form>&nbsp;<a href="javascript:document.form_bnome.submit();"><img class="alinhamento-meio" src="images/icone-busca.png" width="16" height="16" alt="Buscar"/></a>&nbsp;&nbsp;<form name="form_blinha" id="form_blinha" action="linha_lst.php" method="post" class="form"><input name="nome" id="nome" type="text" value="Logradouro, bairro, referência" size="28px" class="inputBusca" onfocus="javascript:this.value='';" onblur="javascript:this.value = (this.value == '') ? 'Logradouro, bairro, referência' : this.value;"/></form>&nbsp;<a href="javascript:document.form_blinha.submit();"><img class="alinhamento-meio" src="images/icone-busca.png" width="16" height="16" alt="Buscar" /></a></span>
+			</div>
+
+			<div class="busca-onibus-parceiros">
+					<p>Parceiros:</p><br /><a href=link.php?link=http://www.br.com.br/wps/portal/portalconteudo/home&codigo=1036 target="_blank"><img src="../imagens/anunciante001036.bmp" width="94" height="47" border="0" /></a>&nbsp;&nbsp;<a href=link.php?link=http://ufsc.br/&codigo=1022 target="_blank"><img src="../imagens/anunciante001022.bmp" width="94" height="47" border="0" /></a>
+			</div>
+		</div>
+		<div class="publicidade">
+			 
+						 <a onclick="abreJanelaMapa(287,'Mapa','Linhas','CodLinha', 660, 510)" href="javascript:void(0);"><img src="images/trajeto.jpg" width="151" height="151" /></a><br /><br />
+						
+			
+		</div>
+    <div class="conteudo">
+			
+			<div class="banner-titulo-maior"><img src="images/icone-seta.png" width="19" height="19" class="alinhamento-rodape" />&nbsp;<h1>Ônibus municipal em Florianópolis > Detalhamento de linha</h1>
+			<a name="inicio"></a>
+      </div> <br />
+			<table width="500" border="0" cellspacing="4" cellpadding="0">
+				<tr class="transportes" align="center">
+					<td colspan="2" align="right" bgcolor="#fdf0da"  ><h1>Linha:</h1></td>
+          <td colspan="3" bgcolor="#ececec" align="left"><h1>&nbsp;363 - Joaquina - Transol Transportes Coletivos </h1></td>
+         </tr>
+         <tr class="transportes" align="center">
+            <td colspan="2" bgcolor="#fdf0da" align="right"  ><h1>Tarifa cartão:</h1>
+            </td>
+            <td width="117" align="left" bgcolor="#f7f7f7">&nbsp;R$ 2,70</td>
+            <td width="128" align="right" bgcolor="#fdf0da" ><h1>Tarifa dinheiro:</h1></td>
+            <td width="131" align="left" bgcolor="#f7f7f7">R$ 2,90</td>
+          </tr>
+        <tr class="transportes" align="center">
+            <td colspan="2" bgcolor="#fdf0da" align="right"  ><h1>Tempo médio ida:</h1>
+            </td>
+            <td width="117" align="left" bgcolor="#f7f7f7">&nbsp;00:20 min</td>
+            <td width="128" align="right" bgcolor="#fdf0da" ><h1>Tempo médio volta:</h1></td>
+            <td width="131" align="left" bgcolor="#f7f7f7">00:18 min</td>
+          </tr>
+          <tr class="transportes" align="center">
+            <td colspan="2" bgcolor="#fdf0da" align="right"  ><h1>Extensão ida:</h1>
+            </td>
+            <td width="117" align="left" bgcolor="#f7f7f7">&nbsp;6,7 Km</td>
+            <td width="128" align="right" bgcolor="#fdf0da" ><h1>Extensão volta:</h1></td>
+            <td width="131" align="left" bgcolor="#f7f7f7">6,9 Km</td>
+          </tr>
+           <tr class="transportes" align="center">
+            <td colspan="2" bgcolor="#fdf0da" align="right"  ><h1>Notas da linha:</h1>
+            </td>
+            <td colspan="3" align="left" bgcolor="#f7f7f7">&nbsp;</td>
+          </tr>
+        </table>
+        <table>
+        <tr>
+				 <td width="281">&nbsp;<a href="Javascript:window.print();" ><img src="images/icone-imprimir.png" width="14" height="14" />&nbsp;<p class="imprimir_linha">imprimir linha</p></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:addFav()" ><p class="imprimir_linha">+adicionar a favoritos</p></a><br /> 
+          &nbsp;&nbsp;&nbsp;&nbsp;<p class="imprimir_linha2">próximas saídas estão marcadas em verde</p> </td>
+          <td width="207">
+          <a href="#ref" ><img src="images/bt_pts_referencia.jpg" width="191" height="26"/></a>
+		     </td>
+       </tr>
+       </table>
+        <br /><br />
+		<div class="banner-subtitulo"><h1>Horários da linha - Dia da Semana</h1></div><br />	
+				  <table width="500" border="0" cellspacing="4" cellpadding="0">
+					  <tr class="transportes" align="center">
+						  <td align="left" bgcolor="#fdf0da"><h1>Dia da semana - Joaquina -> TILAG - Ida</h1></td>
+						 <td width="136" align="left" bgcolor="#ececec">&nbsp; <h2>Vigência: 05/08/2013</h2></td>
+						</tr>            
+					</table>
+				 <table width="500" border="0" cellspacing="4" cellpadding="0"><tr align="center"><td   bgcolor="#ececec" ><p  >06:00<b></p></b></td><td   bgcolor="#ececec" ><p  >06:38<b></p></b></td><td   bgcolor="#ececec" ><p  >07:33<b></p></b></td><td   bgcolor="#ececec" ><p  >08:22<b></p></b></td><td   bgcolor="#ececec" ><p  >09:00<b></p></b></td><td   bgcolor="#ececec" ><p  >10:06<b></p></b></td><td   bgcolor="#ececec" ><p  >11:25<b></p></b></td><td   bgcolor="#ececec" ><p  >12:12<b></p></b></td><td   bgcolor="#ececec" ><p  >13:25<b></p></b></td><td   bgcolor="#ececec" ><p  >15:06<b></p></b></td></tr><tr align="center"><td   bgcolor="#ececec" ><p  >17:15<b></p></b></td><td   bgcolor="#ececec" ><p  >17:58<b></p></b></td><td   bgcolor="#ececec" ><p  >19:05<b></p></b></td><td   bgcolor="#ececec" ><p  >19:50<b></p></b></td><td   bgcolor="#ececec" ><p  >20:40<b></p></b></td><td   bgcolor="#ececec" ><p  >21:40<b></p></b></td><td   bgcolor="#13a148" ><p  class="fontebranca" >23:40<b></p></b></td></tr></table><BR>
+				  <table width="500" border="0" cellspacing="4" cellpadding="0">
+					  <tr class="transportes" align="center">
+						  <td align="left" bgcolor="#fdf0da"><h1>Dia da semana - TILAG -> Joaquina - Volta</h1></td>
+						 <td width="136" align="left" bgcolor="#ececec">&nbsp; <h2>Vigência: 05/08/2013</h2></td>
+						</tr>            
+					</table>
+				 <table width="500" border="0" cellspacing="4" cellpadding="0"><tr align="center"><td   bgcolor="#ececec" ><p  >06:25<b></p></b></td><td   bgcolor="#ececec" ><p  >07:20<b></p></b></td><td   bgcolor="#ececec" ><p  >08:05<b></p></b></td><td   bgcolor="#ececec" ><p  >08:46<b></p></b></td><td   bgcolor="#ececec" ><p  >09:52<b></p></b></td><td   bgcolor="#ececec" ><p  >10:57<b></p></b></td><td   bgcolor="#ececec" ><p  >11:55<b></p></b></td><td   bgcolor="#ececec" ><p  >13:05<b></p></b></td><td   bgcolor="#ececec" ><p  >14:51<b></p></b></td><td   bgcolor="#ececec" ><p  >16:50<b></p></b></td></tr><tr align="center"><td   bgcolor="#ececec" ><p  >17:41<b></p></b></td><td   bgcolor="#ececec" ><p  >18:40<b></p></b></td><td   bgcolor="#ececec" ><p  >19:30<b></p></b></td><td   bgcolor="#ececec" ><p  >20:25<b></p></b></td><td   bgcolor="#ececec" ><p  >21:27<b></p></b></td><td   bgcolor="#13a148" ><p  class="fontebranca" >23:25<b></p></b></td></tr></table><BR><div class="banner-subtitulo"><h1>Horários da linha - Sábado</h1></div><br />	
+				  <table width="500" border="0" cellspacing="4" cellpadding="0">
+					  <tr class="transportes" align="center">
+						  <td align="left" bgcolor="#fdf0da"><h1>Sábado - Joaquina -> TILAG - Ida</h1></td>
+						 <td width="136" align="left" bgcolor="#ececec">&nbsp; <h2>Vigência: 10/03/2014</h2></td>
+						</tr>            
+					</table>
+				 <table width="500" border="0" cellspacing="4" cellpadding="0"><tr align="center"><td   bgcolor="#ececec" ><p  >05:50<b></p></b></td><td   bgcolor="#ececec" ><p  >07:45<b></p></b></td><td   bgcolor="#ececec" ><p  >11:00<b></p></b></td><td   bgcolor="#ececec" ><p  >13:00<b></p></b></td><td   bgcolor="#ececec" ><p  >16:24<b></p></b></td><td   bgcolor="#ececec" ><p  >19:07<b></p></b></td></tr></table><BR>
+				  <table width="500" border="0" cellspacing="4" cellpadding="0">
+					  <tr class="transportes" align="center">
+						  <td align="left" bgcolor="#fdf0da"><h1>Sábado - TILAG -> Joaquina - Volta</h1></td>
+						 <td width="136" align="left" bgcolor="#ececec">&nbsp; <h2>Vigência: 10/03/2014</h2></td>
+						</tr>            
+					</table>
+				 <table width="500" border="0" cellspacing="4" cellpadding="0"><tr align="center"><td   bgcolor="#ececec" ><p  >07:29<b></p></b></td><td   bgcolor="#ececec" ><p  >10:41<b></p></b></td><td   bgcolor="#ececec" ><p  >12:47<b></p></b></td><td   bgcolor="#ececec" ><p  >16:13<b></p></b></td><td   bgcolor="#ececec" ><p  >18:47<b></p></b></td></tr></table><BR><div class="banner-subtitulo"><h1>Horários da linha - Domingo</h1></div><br />	
+				  <table width="500" border="0" cellspacing="4" cellpadding="0">
+					  <tr class="transportes" align="center">
+						  <td align="left" bgcolor="#fdf0da"><h1>Domingo - Joaquina -> TILAG - Ida</h1></td>
+						 <td width="136" align="left" bgcolor="#ececec">&nbsp; <h2>Vigência: 10/03/2014</h2></td>
+						</tr>            
+					</table>
+				 <table width="500" border="0" cellspacing="4" cellpadding="0"><tr align="center"><td   bgcolor="#ececec" ><p  >09:00<b></p></b></td><td   bgcolor="#ececec" ><p  >11:00<b></p></b></td><td   bgcolor="#ececec" ><p  >12:58<b></p></b></td><td   bgcolor="#ececec" ><p  >16:26<b></p></b></td><td   bgcolor="#ececec" ><p  >17:34<b></p></b></td><td   bgcolor="#ececec" ><p  >19:28<b></p></b></td></tr></table><BR>
+				  <table width="500" border="0" cellspacing="4" cellpadding="0">
+					  <tr class="transportes" align="center">
+						  <td align="left" bgcolor="#fdf0da"><h1>Domingo - TILAG -> Joaquina - Volta</h1></td>
+						 <td width="136" align="left" bgcolor="#ececec">&nbsp; <h2>Vigência: 10/03/2014</h2></td>
+						</tr>            
+					</table>
+				 <table width="500" border="0" cellspacing="4" cellpadding="0"><tr align="center"><td   bgcolor="#ececec" ><p  >08:47<b></p></b></td><td   bgcolor="#ececec" ><p  >10:47<b></p></b></td><td   bgcolor="#ececec" ><p  >12:46<b></p></b></td><td   bgcolor="#ececec" ><p  >16:15<b></p></b></td><td   bgcolor="#ececec" ><p  >17:18<b></p></b></td><td   bgcolor="#ececec" ><p  >19:17<b></p></b></td></tr></table><BR>
+			 <br />
+			<a href="onibus.php"><img src="images/bt_voltar_linhas.png" width="157" height="26" align="right" /></a>
+			<a href="#inicio"><img src="images/bt_volta_inicio.png" width="119" height="26" align="right" /></a>
+			<br />
+			<br />        
+			<br />
+			<table width="500" border="0" cellspacing="4" cellpadding="0">
+				<tr class="transportes" align="center">
+					<td align="left" bgcolor="#fdf0da"><h1>Legenda:</h1></td>
+				</tr>            
+			</table>
+			<table width="500" border="0" cellspacing="4" cellpadding="0">
+			<tr align="left">
+			
+			</tr>
+			</table>
+			<br />
+		<div class="banner-subtitulo">
+			<h1>Itinerários e pontos de referências</h1>
+			<a name="ref"></a>
+		</div><br /><table cellpadding='0' cellspacing='0' bordercolor='cccccc' border='0' width='100%' valign='top'><tr><td valign='top'><table cellpadding='0' cellspacing='4' width='100%'><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da"><h1>Itinerário de IDA </h1></td></tr> <tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Avenida Pref. Acácio Garibaldi S. Thiago </td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Avenida das Rendeiras</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Rua Henrique Veras do Nascimento</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Rua Rita Lourenço da Silveira</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Rua João Pacheco da Costa</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Rua Crisógono Vieira da Cruz</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;  TILAG</td></tr></table></td>
+									<td valign='top'><table cellpadding='0' cellspacing='4' ' width='100%'><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da"><h1>Itinerário de Volta </h1></td></tr> <tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;  TILAG</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Avenida Afonso Delambert Neto</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Rodovia Ademar Gonzaga SC 404</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Rua João Pacheco da Costa</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Rua Rita Lourenço da Silveira</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Rua Henrique Veras do Nascimento</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Avenida das Rendeiras</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Avenida Pref. Acácio Garibaldi S. Thiago </td></tr></table></td></tr></table><br />
+			<a href="onibus.php"><img src="images/bt_voltar_linhas.png" width="157" height="26" align="right" /></a>
+			<a href="#inicio"><img src="images/bt_volta_inicio.png" width="119" height="26" align="right" /></a>
+			<br /><br /><br />
+		<div class="banner-subtitulo">
+          <h1>Esta linha passa pelas seguintes referências</h1></div>
+			<table width="500" border="0" cellspacing="4" cellpadding="0">
+         <tr class="transportes" align="center">
+         </tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Agência dos Correios - Praça da Lagoa</td><td align="left" bgcolor="#fdf0da">&nbsp;Escola Básica Henrique Veras</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Igreja da Lagoa</td><td align="left" bgcolor="#fdf0da">&nbsp;Ônibus SURF</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Polícia Militar - Lagoa da Conceição</td><td align="left" bgcolor="#fdf0da">&nbsp;Praça da Lagoa</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;Praia da Joaquina </td><td align="left" bgcolor="#fdf0da">&nbsp;Sorvetes Ilha Bela</td></tr><tr class="transportes" align="center"><td align="left" bgcolor="#fdf0da">&nbsp;TILAG - Terminal de Integração da Lagoa da Conceição</td><td align="left" bgcolor="#fdf0da">&nbsp;Transporte Transol</td></tr></tr></table><br />
+			<a href="fale.php?linha=363"><img src="images/bt_sugere_ref.png" width="136" height="26" align="right" /></a>
+			<a href="#inicio"><img src="images/bt_volta_inicio.png" width="119" height="26" align="right" /></a><br /><br /><br /><br /><br />
+			<a href="javascript:history.back(-1);"><img src="images/botao-voltar.png" width="62" height="26" /></a><br><br><br>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="apoio">
+    <p>Apoio:</p><br /><a href="http://www.pmf.sc.gov.br/entidades/turismo/" target="_blank"><img src="images/apoio1.png" width="50" height="37" hspace="4" title="Secretaria Municipal de Turismo, Cultura e Esporte"/></a><a href="http://www.pmf.sc.gov.br/entidades/transportes/" target="_blank"><img src="images/apoio2.png" width="50" height="37" hspace="4" title="Secretaria Municipal de Transportes, Mobilidade e Terminais "/></a><a href="http://www.ritmosdascidades.com.br/" target="_blank"><img src="images/apoio3.png" width="50" height="37" hspace="4" title="RITMOS das Cidades | Rede de Infraestrutura, Transporte, Mobilidade e Seguran‡a no Trƒnsito"/></a><a href="http://www.viaciclo.org.br/portal/index.php" target="_blank"><img src="images/apoio4.png" width="50" height="37" hspace="4" title="Associa‡Æo dos Ciclousu rios da Grande Florian¢polis | ViaCiclo"/></a><a href="http://www.abih-sc.com.br/" target="_blank"><img src="images/apoio5.png" width="50" height="37" hspace="4" title="ABIH SC | Associa‡Æo Brasileira da Ind£stria de Hot‚is em Santa Catarina"/></a>&nbsp;
+  </div>
+	<div class="conteudo">
+		<p>&copy; Copyright MObfloripa &bull; Você em qualquer lugar &bull; Direitos Reservados &bull;<a href="#" > Termo de Uso</a></p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17978746-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<script>
+	 /*$(document).ready(function() {
+		window.setInterval("mostraGTE()", 5000);
+	 });
+	 
+	 function mostraGTE(){
+	 	alert($(".goog-te-menu-value").html());
+	 }*/
+
+</script>
+</body>
+</html>	
